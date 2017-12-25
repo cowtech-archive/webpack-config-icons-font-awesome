@@ -24,7 +24,6 @@ function loader(toLoad) {
         const icon = require(`@fortawesome/fontawesome-free-${section}/${camelcase('fa', name)}`);
         icons.definitions += generateSVG(icon, tag);
         accu[alias] = tag;
-        console.log(generateSVG(icon, tag));
         return accu;
     }, {});
     return icons;

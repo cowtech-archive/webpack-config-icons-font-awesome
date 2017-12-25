@@ -1,3 +1,7 @@
+### 2017-12-25 / 0.1.1
+
+* Removed debug line.
+
 ### 2017-12-25 / 0.1.0
 
 * Initial version.
