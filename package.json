@@ -1,0 +1,42 @@
+{
+  "name": "@cowtech/webpack-config-icons-font-awesome",
+  "version": "0.8.2",
+  "description": "CowTech WebPack configuration loader for Font Awesome icons.",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "types": "types",
+  "scripts": {
+    "prebuild": "rm -rf index.js *.d.ts types",
+    "build": "rollup --environment production -c rollup.config.js",
+    "postbuild": "./node_modules/.bin/tslint --project tsconfig.json -t stylish",
+    "postpublish": "git push origin && git push origin -f --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cowtech/webpack-config-icons-font-awesome"
+  },
+  "keywords": [],
+  "author": "Shogun <shogun@cowtech.it>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cowtech/webpack-config-icons-font-awesome/issues"
+  },
+  "homepage": "https://github.com/cowtech/webpack-config-icons-font-awesome",
+  "dependencies": {
+    "@cowtech/webpack-config-lite": "~0.1",
+    "@fortawesome/fontawesome-free-brands": "~5.0",
+    "@fortawesome/fontawesome-free-solid": "~5.0",
+    "camelcase": "~4.1"
+  },
+  "devDependencies": {
+    "@cowtech/package-utils": "~0.2",
+    "@types/camelcase": "~4.1",
+    "@types/cheerio": "~0.22",
+    "rollup": "~0.53",
+    "rollup-plugin-typescript2": "~0.9"
+  }
+}

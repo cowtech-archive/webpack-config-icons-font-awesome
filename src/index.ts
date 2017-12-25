@@ -1,0 +1,44 @@
+import {Icons} from '@cowtech/webpack-config-lite';
+import camelcase from 'camelcase';
+
+// Field: viewBoxWidth, viewBoxHeight, unused, unicodeCode, SVG path
+type IconDefinition = [number, number, Array<any>, string, string];
+interface Icon{
+  prefix: string;
+  iconName: string;
+  icon: IconDefinition;
+}
+
+interface Tags{
+  [key: string]: string;
+}
+
+const generateSVG = function(icon: Icon, tag: string): string{
+  const def: IconDefinition = icon.icon;
+
+  return `<svg id="${tag}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${def[0]} ${def[1]}"><path fill="currentColor" d="${def[4]}"></path></svg>`;
+};
+
+export function loader(toLoad: Array<string>): Icons{
+  const icons: Icons = {
+    tags: {},
+    definitions: ''
+  };
+
+  icons.tags = toLoad.reduce<Tags>((accu: Tags, entry: string, index: number) => {
+    // Manipulate the icon name
+    const [alias, rawName]: Array<string> = entry.includes('@') ? entry.split('@') : [entry.replace(/:.+/, ''), entry];
+    const [name, section]: Array<string> = rawName.includes(':') ? rawName.split(':') : [rawName, 'solid'];
+    const tag: string = `i${index}`;
+
+    // Load the icon then add to the definitions
+    const icon: Icon = require(`@fortawesome/fontawesome-free-${section}/${camelcase('fa', name)}`);
+    icons.definitions += generateSVG(icon, tag);
+    accu[alias] = tag;
+    console.log(generateSVG(icon, tag));
+
+    return accu;
+  }, {});
+
+  return icons;
+}
