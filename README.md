@@ -1,13 +1,13 @@
-# webpack-config-lite
+# @cowtech/webpack-config-icons-font-awesome
 
-[![Package Version](https://badge.fury.io/js/%40cowtech%2Fwebpack-config-lite.svg)](https://badge.fury.io/js/%40cowtech%2Fwebpack-config-lite)
-[![Dependency Status](https://gemnasium.com/badges/github.com/cowtech/webpack-config-lite.svg)](https://gemnasium.com/github.com/cowtech/webpack-config-lite)
+[![Package Version](https://badge.fury.io/js/%40cowtech%2Fwebpack-config-icons-font-awesome.svg)](https://badge.fury.io/js/%40cowtech%2Fwebpack-config-icons-font-awesome)
+[![Dependency Status](https://gemnasium.com/badges/github.com/cowtech/webpack-config-icons-font-awesome.svg)](https://gemnasium.com/github.com/cowtech/webpack-config-icons-font-awesome)
 
 CowTech WebPack configuration without any CSS handling.
 
-https://github.com/ShogunPanda/webpack-config-lite
+https://github.com/ShogunPanda/webpack-config-icons-font-awesome
 
-## Contributing to webpack-config-lite
+## Contributing to webpack-config-icons-font-awesome
 
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
