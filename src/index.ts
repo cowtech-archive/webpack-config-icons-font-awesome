@@ -2,22 +2,23 @@ import {Icons} from '@cowtech/webpack-config-lite';
 import camelcase from 'camelcase';
 
 // Field: viewBoxWidth, viewBoxHeight, unused, unicodeCode, SVG path
-type IconDefinition = [number, number, Array<any>, string, string];
-interface Icon{
+export type IconDefinition = [number, number, Array<any>, string, string];
+
+export interface Icon{
   prefix: string;
   iconName: string;
   icon: IconDefinition;
 }
 
-interface Tags{
+export interface Tags{
   [key: string]: string;
 }
 
-const generateSVG = function(icon: Icon, tag: string): string{
+export function generateSVG(icon: Icon, tag: string): string{
   const def: IconDefinition = icon.icon;
 
   return `<svg id="${tag}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${def[0]} ${def[1]}"><path fill="currentColor" d="${def[4]}"></path></svg>`;
-};
+}
 
 export function loader(toLoad: Array<string>): Icons{
   const icons: Icons = {

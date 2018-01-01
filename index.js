@@ -6,10 +6,10 @@ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'defau
 
 var camelcase = _interopDefault(require('camelcase'));
 
-const generateSVG = function (icon, tag) {
+function generateSVG(icon, tag) {
     const def = icon.icon;
     return `<svg id="${tag}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${def[0]} ${def[1]}"><path fill="currentColor" d="${def[4]}"></path></svg>`;
-};
+}
 function loader(toLoad) {
     const icons = {
         tags: {},
@@ -29,4 +29,5 @@ function loader(toLoad) {
     return icons;
 }
 
+exports.generateSVG = generateSVG;
 exports.loader = loader;

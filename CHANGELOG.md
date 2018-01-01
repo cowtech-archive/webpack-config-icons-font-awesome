@@ -1,3 +1,7 @@
+### 2018-01-01 / 0.1.2
+
+* Export all functions and interfaces.
+
 ### 2017-12-25 / 0.1.1
 
 * Removed debug line.
