@@ -9,5 +9,5 @@ export default {
   plugins: [
     typescript({clean: true, cacheRoot: 'tmp/.rpt2_cache', tsconfig: 'tsconfig.json', useTsconfigDeclarationDir: true})
   ],
-  external: [...Object.keys(require('./package.json').dependencies), 'fs', 'path', 'webpack', 'cheerio']
+  external: [...Object.keys(require('./package.json').dependencies), 'fs', 'path', 'webpack']
 };

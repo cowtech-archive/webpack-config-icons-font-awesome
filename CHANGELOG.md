@@ -1,3 +1,7 @@
+### 2018-01-18 / 0.2.0
+
+* Updated dependencies. Require Node.js 9.
+
 ### 2018-01-01 / 0.1.2
 
 * Export all functions and interfaces.
