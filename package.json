@@ -1,6 +1,6 @@
 {
   "name": "@cowtech/webpack-config-icons-font-awesome",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "CowTech WebPack configuration loader for Font Awesome icons.",
   "main": "index.js",
   "files": [
