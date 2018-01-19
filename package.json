@@ -1,6 +1,6 @@
 {
   "name": "@cowtech/webpack-config-icons-font-awesome",
-  "version": "0.2.1",
+  "version": "0.2.0",
   "description": "CowTech WebPack configuration loader for Font Awesome icons.",
   "main": "index.js",
   "files": [
@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/cowtech/webpack-config-icons-font-awesome",
   "dependencies": {
+    "@cowtech/webpack-config-lite": "~0.3",
     "@fortawesome/fontawesome-free-brands": "~5.0",
     "@fortawesome/fontawesome-free-solid": "~5.0",
     "camelcase": "~4.1"
