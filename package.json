@@ -28,7 +28,6 @@
   },
   "homepage": "https://github.com/cowtech/webpack-config-icons-font-awesome",
   "dependencies": {
-    "@cowtech/webpack-config-lite": "~0.2",
     "@fortawesome/fontawesome-free-brands": "~5.0",
     "@fortawesome/fontawesome-free-solid": "~5.0",
     "camelcase": "~4.1"
