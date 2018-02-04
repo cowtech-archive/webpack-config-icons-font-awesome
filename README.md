@@ -1,11 +1,11 @@
 # @cowtech/webpack-config-icons-font-awesome
 
-[![Package Version](https://badge.fury.io/js/%40cowtech%2Fwebpack-config-icons-font-awesome.svg)](https://badge.fury.io/js/%40cowtech%2Fwebpack-config-icons-font-awesome)
-[![Dependency Status](https://gemnasium.com/badges/github.com/cowtech/webpack-config-icons-font-awesome.svg)](https://gemnasium.com/github.com/cowtech/webpack-config-icons-font-awesome)
+[![Package Version](https://img.shields.io/npm/v/@cowtech/webpack-config-icons-font-awesome.svg)](https://npmjs.com/package/@cowtech/webpack-config-icons-font-awesome)
+[![Dependency Status](https://img.shields.io/gemnasium/github.com/cowtech/webpack-config-icons-font-awesome.svg)](https://gemnasium.com/github.com/cowtech/webpack-config-icons-font-awesome)
 
 CowTech WebPack configuration without any CSS handling.
 
-https://github.com/ShogunPanda/webpack-config-icons-font-awesome
+https://github.com/cowtech/webpack-config-icons-font-awesome
 
 ## Contributing to webpack-config-icons-font-awesome
 
@@ -20,4 +20,4 @@ https://github.com/ShogunPanda/webpack-config-icons-font-awesome
 
 Copyright (C) 2017 and above Shogun <shogun@cowtech.it>.
 
-Licensed under the MIT license, which can be found at http://opensource.org/licenses/MIT.
+Licensed under the MIT license, which can be found at https://choosealicense.com/licenses/mit.
