@@ -21,7 +21,7 @@ export function generateSVG(icon: Icon, tag: string): string{
 }
 
 export function loader(toLoad: Array<string>): Icons{
-  const icons = {
+  const icons: Icons = {
     tags: {},
     definitions: ''
   };

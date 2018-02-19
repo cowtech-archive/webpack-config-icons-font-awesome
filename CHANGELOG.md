@@ -1,3 +1,7 @@
+### 2018-02-19 / 0.3.2
+
+* Added neeeded type.
+
 ### 2018-02-19 / 0.3.1
 
 * Simplified code.
