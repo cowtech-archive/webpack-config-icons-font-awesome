@@ -15,25 +15,25 @@ export interface Tags{
 }
 
 export function generateSVG(icon: Icon, tag: string): string{
-  const def: IconDefinition = icon.icon;
+  const def = icon.icon;
 
   return `<svg id="${tag}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${def[0]} ${def[1]}"><path fill="currentColor" d="${def[4]}"></path></svg>`;
 }
 
 export function loader(toLoad: Array<string>): Icons{
-  const icons: Icons = {
+  const icons = {
     tags: {},
     definitions: ''
   };
 
-  icons.tags = toLoad.reduce<Tags>((accu: Tags, entry: string, index: number) => {
+  icons.tags = toLoad.reduce<Tags>((accu, entry, index) => {
     // Manipulate the icon name
-    const [alias, rawName]: Array<string> = entry.includes('@') ? entry.split('@') : [entry.replace(/:.+/, ''), entry];
-    const [name, section]: Array<string> = rawName.includes(':') ? rawName.split(':') : [rawName, 'solid'];
-    const tag: string = `i${index}`;
+    const [alias, rawName] = entry.includes('@') ? entry.split('@') : [entry.replace(/:.+/, ''), entry];
+    const [name, section] = rawName.includes(':') ? rawName.split(':') : [rawName, 'solid'];
+    const tag = `i${index}`;
 
     // Load the icon then add to the definitions
-    const icon: Icon = require(`@fortawesome/fontawesome-free-${section}/${camelcase('fa', name)}`);
+    const icon = require(`@fortawesome/fontawesome-free-${section}/${camelcase('fa', name)}`);
     icons.definitions += generateSVG(icon, tag);
     accu[alias] = tag;
 
