@@ -1,3 +1,7 @@
+### 2018-02-20 / 0.4.0
+
+* Updated dependencies.
+
 ### 2018-02-19 / 0.3.2
 
 * Added neeeded type.
