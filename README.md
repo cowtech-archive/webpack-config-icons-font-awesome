@@ -7,6 +7,10 @@ CowTech WebPack configuration without any CSS handling.
 
 https://github.com/cowtech/webpack-config-icons-font-awesome
 
+# DEPRECATED
+
+## Please use: https://github.com/cowtech/webpack-config
+
 ## Contributing to webpack-config-icons-font-awesome
 
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
