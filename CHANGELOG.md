@@ -1,3 +1,7 @@
+### 2018-06-19 / 0.4.1
+
+* chore: End of development notice.
+
 ### 2018-02-20 / 0.4.0
 
 * Updated dependencies.
